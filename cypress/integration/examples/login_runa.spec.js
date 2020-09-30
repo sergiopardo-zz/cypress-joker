@@ -23,7 +23,7 @@ context('Actions', () => {
             headers: {
                 'accept': 'application/json',
                 'authorization': '5_LOoITtGujtbPdZbAXzxAx3jPFieFNfP4iZ4j8GEaGogP2doFgwWcjltf6SVvrW'
-            }``
+            }
         }).then((response) => {
             expect(response.status).to.eq(200);
         })
