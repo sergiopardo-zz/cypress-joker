@@ -5,6 +5,7 @@
 1. Install NVM
 2. Install a LTS version of NODE
 3. Install Cypress ```npm install cypress```
+4. Run ```npm install```
 
 ## Run tests headless
 
@@ -14,7 +15,6 @@
 ## Run test with UI
 
 1. ```cd``` on the project folder
-2. Run ```./node_modules/.bin/cypress open```
+2. Run ```npm run cypress:open```
 3. In the UI select the browser and then select the spec file.
 4. MAGIC!!
-

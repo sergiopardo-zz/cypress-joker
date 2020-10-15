@@ -7,7 +7,7 @@ context('Actions', () => {
 
     it('User should login in Runa', () => {
         cy.get(':nth-child(2) > .field-body > .field > .control > [data-testid=wrapped-input]')
-        .type('qa+runahr-api-br-feature-pt-398-m@runahr.com')
+            .type('qa+mexico@runahr.com')
         cy.get(':nth-child(3) > .field-body > .field > .control > [data-testid=wrapped-input]')
         .type('runahr')
         cy.get('[data-testid=login-submit]').click()
@@ -19,7 +19,7 @@ context('Actions', () => {
     it('User should get employees by API', function () {
         cy.request({
             method: 'get',
-            url: 'https://runahr-api-br-feature-pt-398-m.herokuapp.com/employees',
+            url: 'https://mexico.app.qa-base.runahrapps.com',
             headers: {
                 'accept': 'application/json',
                 'authorization': '5_LOoITtGujtbPdZbAXzxAx3jPFieFNfP4iZ4j8GEaGogP2doFgwWcjltf6SVvrW'
