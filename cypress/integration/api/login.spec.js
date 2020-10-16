@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Testing at a API level', () => {
+describe('Testing at the API level', () => {
     let access_token
 
     before(() => {
