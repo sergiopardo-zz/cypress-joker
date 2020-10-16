@@ -24,6 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
+import "cypress-localstorage-commands"
+
 Cypress.Commands.add('getToken', (user, passwd) => {
     cy.request({
         method: 'POST',
