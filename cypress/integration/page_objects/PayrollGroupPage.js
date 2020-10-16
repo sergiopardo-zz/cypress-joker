@@ -24,10 +24,10 @@ class PayrollGroupPage {
         cy.get('[data-testid=checkbox-option-false]').click()
         cy.get('[data-testid=radio-option-false]').click()
         cy.get('.is-submit').click()
+        cy.get('.is-submit').should('not.be.visible')
     }
 
     assertNewPayrollGroup() {
-        cy.wait(5000)
         cy.get('div:last-child > .section-inner-item-view-header').invoke('text').then((text) => {
             expect(text.split('.')[0]).to.be.equal(this.payroll_group)
         })
