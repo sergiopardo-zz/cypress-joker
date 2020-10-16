@@ -23,3 +23,18 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('getToken', (user, passwd) => {
+    cy.request({
+        method: 'POST',
+        url: 'https://api.qa-base.runahrapps.com/sessions',
+        body: {
+            email: user,
+            password: passwd,
+            subdomain: "mexico"
+        }
+    }).its('body.access_token').should('not.be.empty')
+        .then(access_token => {
+            return access_token
+        })
+})
