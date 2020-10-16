@@ -22,4 +22,5 @@ When('I register this new payroll group',()=>{
 })
 
 Then('I should see the new payroll group in the list',()=>{
+    payrollGroupPage.assertNewPayrollGroup()
 })
