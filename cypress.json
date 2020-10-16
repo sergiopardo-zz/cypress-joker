@@ -1,4 +1,5 @@
 {
   "baseUrl": "https://mexico.app.qa-base.runahrapps.com",
-  "projectId": "mn6urt"
+  "projectId": "mn6urt",
+  "testFiles": "**/*.{feature,features}"
 }
