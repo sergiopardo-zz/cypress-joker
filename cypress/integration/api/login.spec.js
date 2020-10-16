@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Should test at a API level', () => {
+describe('Testing at a API level', () => {
     let access_token
 
     before(() => {
@@ -10,7 +10,7 @@ describe('Should test at a API level', () => {
             })
     })
 
-    it('Should create an account', () => {
+    it('Should create a Payroll Group', () => {
         cy.request({
             method: 'POST',
             url: 'https://api.qa-base.runahrapps.com/payroll_groups',
