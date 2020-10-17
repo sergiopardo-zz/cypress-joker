@@ -1,5 +1,7 @@
 {
   "baseUrl": "https://mexico.app.qa-base.runahrapps.com",
   "projectId": "mn6urt",
-  "testFiles": "**/*.{feature,features}"
+  "testFiles": "**/*.{feature,features,spec.js}",
+  "viewportWidth": 1280,
+  "viewportHeight": 800
 }
