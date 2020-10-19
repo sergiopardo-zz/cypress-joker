@@ -40,3 +40,10 @@ Cypress.Commands.add('getToken', (user, passwd) => {
             return access_token
         })
 })
+
+Cypress.Commands.add('itemSelect', (text, selector1, selector2) => {
+    cy.get(selector1).click().type(text)
+    cy.get(selector2).each(($el) => {
+        if ($el.text() === text) ($el.click())
+    })
+})
