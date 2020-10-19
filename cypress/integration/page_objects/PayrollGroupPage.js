@@ -15,7 +15,7 @@ class PayrollGroupPage {
         cy.wait(5000)
         cy.get('[data-testid=new-group-payroll]').click()
         cy.get('[data-testid=wrapped-input]').type(this.payroll_group)
-        cy.get('#payroll_group_sub_company_id').click().type('Review App{enter}')
+        cy.itemSelect('Review App', '#payroll_group_sub_company_id', "div[id^='react-select-payroll_group[sub_company_id]-option-']")
         cy.get('#payroll_group_company_bank_id').click().type('Cta Runa{enter}')
         cy.get('#payroll_group_currency_id').click().type('Peso Mexicano{enter}')
         cy.get('#payroll_group_payroll_frequency').click().type('Mensual{enter}')
@@ -32,6 +32,6 @@ class PayrollGroupPage {
             expect(text.split('.')[0]).to.be.equal(this.payroll_group)
         })
     }
-} 
+}
 
 export default PayrollGroupPage
