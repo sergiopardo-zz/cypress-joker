@@ -41,7 +41,7 @@ Change the name of the directory to the name of the project you are creating:
 To change the git url you need to have a new project created at [Runa's github](https://github.com/runahr)
 ```
 git remote remove origin
-git remote add origin URL_DO_SEU_GIT
+git remote add origin URL_OF_YOUR_GIT
 ```
 
 ### Push the code
