@@ -36,7 +36,7 @@ describe('Testing at the API level', () => {
           automatic: 'false',
         },
         'payroll_group[automatic]': false,
-      }
+      },
     }).as('response')
 
     cy.get('@response').then((res) => {

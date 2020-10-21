@@ -2,7 +2,6 @@
 /* eslint-disable no-undef */
 /// <reference types="cypress" />
 
-
 class PayrollGroupPage {
   constructor(payrollGroup) {
     this.payrollGroup = payrollGroup

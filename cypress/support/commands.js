@@ -35,8 +35,8 @@ Cypress.Commands.add('getToken', (user, passwd) => {
     body: {
       email: user,
       password: passwd,
-      subdomain: 'mexico'
-    }
+      subdomain: 'mexico',
+    },
   }).its('body.access_token').should('not.be.empty')
     .then((accessToken) => accessToken)
 })
