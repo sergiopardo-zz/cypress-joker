@@ -23,5 +23,9 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:runahr/cypress-runa-automation-base.git"
   }
 }
